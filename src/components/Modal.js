@@ -5,9 +5,9 @@ let Modal = ({flag,setFlag}) => {
 
     return (
         <div>
-            {flag && <div className="model-overlay">
+            {flag && <div className="model-overlay" onClick={(e)=> setFlag(false)}>
                 <button className="model-close" onClick={(e)=> setFlag(false)}>Close</button>
-                <p className="model-p">This is the content of the modal.</p>
+                <p className="model p">This is the content of the modal.</p>
             </div>}
         </div>
     )
