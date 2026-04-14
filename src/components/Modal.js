@@ -4,9 +4,11 @@ let Modal = ({ setFlag }) => {
 
 
     return (
-        <div className="model-overlay" onClick={(e) => setFlag(false)}>
+        <div style={{height: '100vh'}}>
+            <div className="model-overlay" onClick={(e) => setFlag(false)}>
             <button className="model-close" onClick={(e) => setFlag(false)}>Close</button>
             <p className="model-p">This is the content of the modal.</p>
+        </div>
         </div>
     )
 }
