@@ -5,7 +5,7 @@ import Modal from "./Modal";
 
 const App = () => {
 
-  let [flag, setFlag] = useState(false)
+  let [flag,setFlag] = useState(false)
 
   function handleClick(e){
     e.preventDefault()
@@ -15,11 +15,9 @@ const App = () => {
   return (
     <div>
         <button onClick={handleClick}>Show Modal</button>
-        {console.log(flag)}
-        <Modal
-        flag={flag}
+        {flag && <Modal
         setFlag = {setFlag}
-        />
+        />}
     </div>
   )
 }
